@@ -7,8 +7,8 @@ export default function Influencer() {
   return (
     <>
     <div className="switch-btn">
-        <button onClick={() => {setShowInfluencerForm(true)}}>Influencer</button>
-        <button onClick={() => {setShowInfluencerForm(false)}   }>Brand</button>
+        <button className={showInfluencerForm ? "active" : "" } onClick={() => {setShowInfluencerForm(true)}}>Influencer</button>
+        <button className={!showInfluencerForm ? "active" : "" } onClick={() => {setShowInfluencerForm(false)}}>Brand</button>
     </div>
     {showInfluencerForm ? (<div className="influ-sign-up">
       <h4>Influencer&apos;s Login</h4>
@@ -17,12 +17,14 @@ export default function Influencer() {
           type="text"
           name="influ-name"
           id="influ-name"
+          required
           placeholder="Put Your Name"
         />
         <input
           type="text"
           name="influ-insta"
           id="influ-insta"
+          required
           placeholder="Put Your Insta ID"
         />
         <select name="content">
@@ -57,12 +59,14 @@ export default function Influencer() {
           type="text"
           name="brand-name"
           id="brand-name"
+          required
           placeholder="Put Your Company Name"
         />
         <input
           type="text"
           name="brand-website"
           id="brand-website"
+          required
           placeholder="Put Your website"
         />
         <select name="content">

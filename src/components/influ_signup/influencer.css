@@ -9,6 +9,19 @@
 .switch-btn button{
     font-size: 18px;
     padding: 10px 30px;
+    border: none;
+    background: transparent;
+    font-weight: 800;
+}
+
+.switch-btn button:hover{
+    transform: scale(1.1);
+    color: red;
+}
+
+.active{
+    color: red;
+    text-decoration: underline 2px solid red;
 }
 
 .influ-sign-up{
