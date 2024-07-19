@@ -1,0 +1,56 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+    margin: auto;
+}
+
+.navbar .nav-left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.nav-left .logo{
+    transform: rotate(20deg);
+    color: red; 
+}
+
+.nav-left .title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-right>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-right > ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.nav-right > ul button{
+    background: transparent;
+    border-color: red;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 800;
+}

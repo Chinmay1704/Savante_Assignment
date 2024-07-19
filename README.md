@@ -1,5 +1,8 @@
-# Savante's Assignment
+# React + Vite
 
-In this assignment I am going to make an influencer marketing website.
-This project will include a landing page and a sign up page 
-There will be two options in sign up one will be for a brand and other wil be for an influencer
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
