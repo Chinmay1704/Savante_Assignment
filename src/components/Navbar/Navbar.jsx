@@ -1,12 +1,14 @@
 import "./navbar.css"
+import signup from "../signup/Signup"
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div className='navbar'>
-      <div className="nav-left">
+      <Link to="/"><div className="nav-left">
         <span className='logo'><i className="fa-brands fa-neos"></i></span>
         <span className='title'>Influencer</span>
-      </div>
+      </div></Link>
 
       <div className="nav-right">
         <ul className='nav-right-opts'>
@@ -17,7 +19,7 @@ export default function Navbar() {
         </ul>
 
         <ul className="signin">
-            <li><a href="#">Sign Up</a></li>
+            <li><Link to="/signup/influencer">Sign Up</Link></li>
             <li><a href="#"><button>Get in Touch</button></a></li>
         </ul>
       </div>

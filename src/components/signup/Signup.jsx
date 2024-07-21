@@ -1,17 +1,27 @@
-import { useState } from "react";
+import React,{ useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./signup.css";
 
 export default function Signup() {
-  const [showInfluencerForm, setShowInfluencerForm] = useState(true);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+  const showInfluencerForm = location.pathname.includes('influencer')
+
+  useEffect(() =>{
+    if(location.pathname === '/signup'){
+      navigate('/signup/influencer')
+    }
+  }, [location.pathname, navigate])
 
   return (
-    <div style={{background: 'linear-gradient(purplr, pink, 90deg)', display:'flex', justifyContent: "center", alignItems:'center'}}>
-      <div className="signup-container" style={{background: 'white'}}>
+    <div className="signup-container">
+      <div className="signup-form">
         <div className="switch-btn">
           <button
             className={showInfluencerForm ? "active" : ""}
             onClick={() => {
-              setShowInfluencerForm(true);
+              navigate("/signup/influencer");
             }}
           >
             Influencer
@@ -19,7 +29,7 @@ export default function Signup() {
           <button
             className={!showInfluencerForm ? "active" : ""}
             onClick={() => {
-              setShowInfluencerForm(false);
+              navigate("/signup/brand")
             }}
           >
             Brand

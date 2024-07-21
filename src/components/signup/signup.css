@@ -1,33 +1,38 @@
 .signup-container{
-    background: linear-gradient(45deg, rgb(255, 13, 182), pink);
-    width: 375px;
+    padding: 30px;
+    background: linear-gradient(45deg, purple, pink);
+}
+
+.signup-form{
+    background: white;
+    width: 340px;
+    padding: 20px;
     margin: 40px auto;
+    border-radius: 20px;
 }
 
 .switch-btn{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin: 20px auto;
 }
 
 .switch-btn button{
     font-size: 18px;
     padding: 10px 30px;
     border: none;
-    background: transparent;
     font-weight: 800;
+    cursor: pointer;
 }
 
 .switch-btn button:hover{
     transform: scale(1.1);
-    color: red;
 }
 
 .active{
-    color: red;
-    text-decoration: underline 2px solid red;
-    background-color: blanchedalmond;
+    color: white;
+    background-color: red;
+    text-decoration: underline 2px solid black;
 }
 
 .influ-sign-up{
@@ -38,6 +43,10 @@
     margin: 20px 0;
 }
 
+.influ-sign-up > h4{
+    font-size: 1.7rem;
+}
+
 .influ-form{
     display: flex;
     flex-direction: column;
@@ -45,12 +54,27 @@
 }
 
 .influ-form input, select{
-    text-align: center;
     padding: 5px 20px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+}
+
+.influ-form textarea{
+    border-radius: 5px;
 }
 
 .influ-form button{
-    align-self: center;
     font-size: 18px;
-    max-width: fit-content;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;    
+    background-color: red;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.influ-form button:hover{
+    transform: scale(1.1);
 }
