@@ -5,6 +5,14 @@ import work_img_1 from "/src/assets/home_2.jpg";
 import work_img_2 from "/src/assets/home_3.jpg";
 import work_img_3 from "/src/assets/home_4.jpg";
 import work_img_4 from "/src/assets/home_5.jpg";
+import approach_img_1 from "/src/assets/home_6.jpg";
+import approach_img_2 from "/src/assets/home_7.jpg";
+import approach_img_3 from "/src/assets/home_8.jpg";
+import team_img_1 from "/src/assets/creator_1.jpg";
+import team_img_2 from "/src/assets/creator_2.jpg";
+import team_img_3 from "/src/assets/cvo.jpg";
+import team_img_4 from "/src/assets/group_director.jpg";
+import team_img_5 from "/src/assets/president.jpg";
 
 export default function Home() {
   return (
@@ -205,7 +213,168 @@ export default function Home() {
       </div>
 
       <div className="approach-container">
-        
+        <div className="approach-title">
+          <h2>Our Approach</h2>
+        </div>
+
+        <div className="approach-content">
+          <div className="approach-content-item">
+            <div className="approach-content-item-left">
+              <span>ideas</span>
+
+              <h3>WHERE CREATIVITY MEETS DATA, MAGIC HAPPENS</h3>
+
+              <p>
+                Imagine the boldness of creativity fuelled by the precision of
+                analytics, guided by your brand&apos;s unique purpose —
+                that&apos;s the Influencer way. We design impactful campaigns
+                that captivate attention, inspire action, and boost CTR, views,
+                and conversions. Bringing your bespoke creative strategy to life
+                for game-changing commercial performance.
+              </p>
+
+              <button className="learn-more">Learn More</button>
+            </div>
+
+            <div className="approach-content-item-right">
+              <img src={approach_img_1} alt="" />
+            </div>
+          </div>
+
+          <div className="approach-content-item">
+            <div className="approach-content-item-right">
+              <img src={approach_img_2} alt="" />
+            </div>
+
+            <div className="approach-content-item-left">
+              <span>EXECUTIONAL EXCELLENCE</span>
+
+              <h3>AGILITY, TRUST AND EFFECTIVENESS</h3>
+
+              <p>
+                We&apos;re rewriting the narrative of influencer marketing by
+                uniting your brand with passionate creators who align with your
+                purpose. As trusted partners and guardians of your brand we
+                build and execute campaigns across every timeline, scope and
+                requirement.
+              </p>
+
+              <button className="learn-more">Learn More</button>
+            </div>
+          </div>
+
+          <div className="approach-content-item">
+            <div className="approach-content-item-left">
+              <span>MEASUREMENT</span>
+
+              <h3>TRANSFORMING DATA INTO GROWTH</h3>
+
+              <p>
+                At Influencer, we don&apos;t just reference data — we bring it
+                to life. Our Influencer Marketing Platform and Impact Studio
+                help us transform data into actionable strategies, morphing
+                followers into dedicated customers. We work with you to
+                determine which KPI&apos;s matter most and refocus your efforts
+                there.
+              </p>
+
+              <button className="learn-more">Learn More</button>
+            </div>
+
+            <div className="approach-content-item-right">
+              <img src={approach_img_3} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="team-container">
+        <div className="team-heading">
+          <h2>our Team</h2>
+
+          <p>
+            Meet the powerhouse of Influencer: a dynamic team of dreamers,
+            makers, and game changers, reshaping the future of marketing. With a
+            collective passion and unique expertise, our people turn data into
+            action, creativity into impact, and new ideas into new realities.
+          </p>
+
+          <button>About Us</button>
+        </div>
+
+        <div className="team-photo">
+          <img src={team_img_1} alt="" />
+          <img src={team_img_2} alt="" />
+          <img src={team_img_3} alt="" />
+          <img src={team_img_4} alt="" />
+          <img src={team_img_5} alt="" />
+        </div>
+      </div>
+
+      <div className="contact">
+        <h2>Ready to make waves?</h2>
+
+        <button>Let&apos;s Talk</button>
+      </div>
+
+      <div className="footer-container">
+        <div className="footer-logo">
+          <span className="logo">
+            <i className="fa-brands fa-neos"></i>
+          </span>
+          <span className="title">Influencer</span>
+        </div>
+
+        <div className="footer-content">
+          <div className="footer-item">
+            <ul>
+              <li className="head">Product</li>
+              <li>Brands</li>
+              <li>Measurement</li>
+              <li>Creators</li>
+            </ul>
+          </div>
+
+          <div className="footer-item">
+            <ul>
+              <li className="head">Company</li>
+              <li>About</li>
+              <li>Careers</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+
+          <div className="footer-item">
+            <ul>
+              <li className="head">Resources</li>
+              <li>Work</li>
+              <li>Resources</li>
+            </ul>
+          </div>
+
+          <div className="footer-item">
+            <ul>
+              <li className="head">Social</li>
+              <li>Instagram</li>
+              <li>X</li>
+              <li>LinkedIn</li>
+              <li>Facebook</li>
+              <li>TikTok</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+
+          <div className="footer-item">
+            <ul>
+              <li className="head">Legal</li>
+              <li>Platform terms</li>
+              <li>Privacy</li>
+              <li>LinkedIn</li>
+              <li>Creator Team UK</li>
+              <li>Creator Team US</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </>
   );
