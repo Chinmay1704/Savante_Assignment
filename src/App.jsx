@@ -1,13 +1,14 @@
 import './App.css'
-import Influencer from './components/influ_signup/Influencer'
+import Signup from './components/signup/Signup'
 import Navbar from './components/Navbar/Navbar'
+import Home from './components/home/Home'
 
 function App() {
 
   return (
     <div className="App">
       <Navbar/>
-      <Influencer/>
+      <Home/>
     </div>
   )
 }

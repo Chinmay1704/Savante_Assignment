@@ -1,9 +1,14 @@
+.signup-container{
+    background: linear-gradient(45deg, rgb(255, 13, 182), pink);
+    width: 375px;
+    margin: 40px auto;
+}
+
 .switch-btn{
     display: flex;
-    width: 60%;
     justify-content: space-evenly;
     align-items: center;
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 .switch-btn button{
@@ -22,6 +27,7 @@
 .active{
     color: red;
     text-decoration: underline 2px solid red;
+    background-color: blanchedalmond;
 }
 
 .influ-sign-up{

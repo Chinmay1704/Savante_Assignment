@@ -44,6 +44,11 @@
     text-decoration: none;
     color: black;
     font-weight: 800;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-right > ul li:hover{
+    transform: scale(1.1);
 }
 
 .nav-right > ul button{
@@ -53,4 +58,9 @@
     padding: 10px;
     border-radius: 10px;
     font-weight: 800;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-right > ul button:hover {
+    transform: scale(1.1);
 }
