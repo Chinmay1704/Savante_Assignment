@@ -108,6 +108,7 @@
 }
 
 .work-container-title > button{
+    font-weight: 700;
     background: red;
     text-transform: uppercase;
     font-size: 20px;
@@ -115,6 +116,11 @@
     border: none;
     border-radius: 5px;
     padding: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.work-container-title > button:hover{
+    transform: scale(1.1);
 }
 
 .work-tiles{
@@ -132,6 +138,13 @@
     border-radius: 10px;
     height: 100%;
     width: 100%;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.work-tiles-item-img img:hover{
+    transform: scale(0.98);
 }
 
 .work-tiles-item-text{
@@ -225,6 +238,11 @@
     background: red;
     border: none;
     border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.approach-content-item-left > button:hover{
+    transform: scale(1.1);
 }
 
 .approach-content-item-right{
@@ -267,6 +285,11 @@
     background-color: black;
     color: white;
     border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.team-heading > button:hover{
+    transform: scale(1.1);
 }
 
 .team-photo{
@@ -280,6 +303,12 @@
     height: 250px;
     width: 250px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.team-photo > img:hover{
+    transform: scale(1.1);
 }
 
 .team-photo > img:nth-child(even){
@@ -314,19 +343,21 @@
 }
 
 .footer-container{
-    margin: 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 40px 0;
+    width: 95%;
 }
 
 .footer-logo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: start;
+    margin-top: 25px;
+    justify-self: flex-start;
+    align-self: start;
     padding-left: 35px;
     gap: 10px;
     font-size: 20px;
+    width: 35%;
 }
 
 .footer-logo .logo{
@@ -339,7 +370,7 @@
     justify-content: space-around;
     align-items: start;
     gap: 40px;
-    width: 55%;
+    width: 65%;
 }
 
 .footer-content ul{
